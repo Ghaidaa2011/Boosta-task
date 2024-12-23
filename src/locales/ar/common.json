@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "home": "الرئيسية",
+    "prices": "الأسعار",
+    "call-sales": "كلم المبيعات",
+    "track-shipment": "تتبع شحنتك",
+    "sign-in": "تسجيل الدخول",
+    "tracking-no": "رقم التتبع"
+  },
+  "shipmentInfo": {
+    "shipment-number": "رقم الشحنة",
+    "last-update": "اخر تحديث",
+    "provider-name": "اسم التاجر",
+    "delivery-date": "موعد التسليم خلال"
+  },
+  "help": {
+    "need-help": "هل يوجد مشكلة في شحنتك؟",
+    "report-problem": "ابلاغ عن مشكلة",
+    "delivery-address": "عنوان التسليم"
+  },
+  "shipmentDetails": {
+    "shipment-details": "تفاصيل الشحنة",
+    "branch": "الفرع",
+    "date":	"التاريخ",
+    "time": "الوقت",
+    "details": "تفاصيل"
+  }
+}

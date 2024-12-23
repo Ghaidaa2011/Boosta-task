@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  font-family: "Cairo", sans-serif;
+}
+.custom-focus {
+  border-color: #ff0000;
+  /* Custom red color */
+  outline: none;
+  /* Remove default outline */
+}
+input.custom-focus:focus {
+  border-color: #ff0000;
+  /* Custom red color */
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5);
+  /* Optional: Add a shadow effect */
+}

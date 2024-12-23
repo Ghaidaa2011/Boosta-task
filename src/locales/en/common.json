@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "home": "Home",
+    "prices": "Pricing",
+    "call-sales": "Call  Sales",
+    "track-shipment": "Track Shipment ",
+    "sign-in": "Sing in",
+    "tracking-no": "Tracking No."
+  },
+  "shipmentInfo": {
+    "shipment-number": "Shipment number",
+    "last-update": "Last update",
+    "provider-name": "Provider Name",
+    "delivery-date": "Delivery Date Within"
+  },
+  "help": {
+    "need-help": "Is there any problem with your delivery?",
+    "report-problem": "Report a Problem",
+    "delivery-address": "Delivery Address"
+  },
+  "shipmentDetails": {
+    "shipment-details": "Shipment Details",
+    "branch": "Branch",
+    "date":	"Date",
+    "time": "Time",
+    "details": "Details"
+  }
+}
