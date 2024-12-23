@@ -1,11 +1,11 @@
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
 
-module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content(),],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
     extend: {
       colors: {
-        customRed: '#E30613', // Convert RGB to Hex
+        customRed: "#E30613", // Convert RGB to Hex
       },
     },
   },
