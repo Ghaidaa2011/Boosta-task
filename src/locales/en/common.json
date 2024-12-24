@@ -24,5 +24,8 @@
     "date":	"Date",
     "time": "Time",
     "details": "Details"
+  },
+  "error":{
+    "invalid":"Invalid Tracking Number"
   }
 }

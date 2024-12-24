@@ -10,7 +10,6 @@ const actGetTrackingOrder = createAsyncThunk(
       const { data } = await axios.get(
         `${trackingNumber}`,
       );
-      console.log(data)
       return data;
     } catch (error) {
       return rejectWithValue(AxiosErrorHandler(error));

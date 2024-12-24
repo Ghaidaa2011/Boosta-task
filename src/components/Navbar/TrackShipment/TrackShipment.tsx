@@ -23,7 +23,7 @@ const TrackShipment: React.FC = () => {
         // Check if the tracking number is the same as the last one
         if (trackingNumber !== lastTrackingNumber) {
           dispatch(actGetTrackingOrder(Number(trackingNumber)));
-          setLastTrackingNumber(trackingNumber); // Update the last tracking number
+          setLastTrackingNumber(trackingNumber); 
         } else {
           alert("You have already requested this tracking number.");
         }

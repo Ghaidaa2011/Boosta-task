@@ -3,9 +3,9 @@ import Delivered from "../../../assets/svg/delivered.svg?react";
 import { FormatShipmentStatusHandler } from "../../../utils";
 const ShipmentStepper = () => {
   const { response } = useShipmentStatus();
-  const isDelivered = response?.CurrentStatus.state === "DELIVERED";
-  const shippingDetails = response?.TransitEvents.map((event, index) => {
-    const isLastItem = index === response?.TransitEvents.length - 1;
+  const isDelivered = response?.CurrentStatus?.state === "DELIVERED";
+  const shippingDetails = response?.TransitEvents?.map((event, index) => {
+    const isLastItem = index === response?.TransitEvents?.length - 1;
     return (
       <li
         key={index}
@@ -36,7 +36,7 @@ const ShipmentStepper = () => {
     );
   });
   return (
-    <ul className="lg:overflow-x-auto relative px-5 pt-5 flex flex-col md:flex-row">
+    <ul className="overflow-x-auto relative px-5 pt-5 flex flex-col md:flex-row">
       {shippingDetails}
     </ul>
   );

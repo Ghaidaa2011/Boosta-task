@@ -1,18 +1,25 @@
+import Delivery from "../pages/Delivery";
 import Navbar from "../components/Navbar/Navbar";
 import Shipment from "../components/Shipment/Shipment";
 import ShipmentTracking from "../components/ShipmentTracking/ShipmentTracking";
 import { useAppSelector } from "../store/hooks";
+import Error from "../pages/Error";
 
 const MainLayout = () => {
-  const response = useAppSelector((state) => state.response);
+  const { response, error } = useAppSelector((state) => state);
+
   return (
     <div className="container mx-auto">
       <Navbar />
-      {response && (
+      {error ? (
+        <Error />
+      ) : response ? (
         <>
           <ShipmentTracking />
           <Shipment />
         </>
+      ) : (
+        <Delivery />
       )}
     </div>
   );

@@ -15,10 +15,10 @@ const ShipmentInfo = () => {
             </span>
             <span
               className={`py-2 md:py-3 font-bold whitespace-nowrap dark:text-white ${stateClass(
-                response?.CurrentStatus.state
+                response?.CurrentStatus?.state
               )}`}
             >
-              {response?.CurrentStatus.state}
+              {response?.CurrentStatus?.state}
             </span>
           </div>
           <div className="flex flex-col px-4 py-2 md:px-6 md:py-3">
@@ -26,7 +26,7 @@ const ShipmentInfo = () => {
               {t("shipmentInfo.last-update")}
             </span>
             <span className="font-bold text-gray-900 py-2 md:py-3">
-              {formatTimestamp(response?.CurrentStatus.timestamp)}
+              {formatTimestamp(response?.CurrentStatus?.timestamp)}
             </span>
           </div>
           <div className="flex flex-col px-4 py-2 md:px-6 md:py-3">

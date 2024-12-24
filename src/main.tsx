@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import MainLayout from "./layouts/MainLayout.tsx";
 // redux
 import { store, persistor } from "../src/store/index";
 import { Provider } from "react-redux";
@@ -7,8 +8,6 @@ import { PersistGate } from "redux-persist/integration/react";
 import "./services/axios-global.js";
 //styles
 import "./styles/global.css";
-//Layouts
-import MainLayout from "./layouts/MainLayout";
 //Languages
 import { I18nextProvider } from "react-i18next";
 import i18next from "./i18n.ts";

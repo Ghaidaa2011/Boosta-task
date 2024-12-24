@@ -8,7 +8,7 @@ const ShipmentDetails = () => {
 
   const response = useAppSelector((state) => state.response);
 
-  const shipmentDetails = response?.TransitEvents.map((detail, index) => (
+  const shipmentDetails = response?.TransitEvents?.map((detail, index) => (
     <tr
       key={index}
       className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
@@ -31,7 +31,7 @@ const ShipmentDetails = () => {
     </tr>
   ));
   return (
-    <div className="sm:overflow-x-scroll md:overflow-x-auto flex flex-col grow">
+    <div className="xs:overflow-x-scroll sm:overflow-x-scroll flex flex-col grow">
       <h2 className="mb-5">{t("shipmentDetails.shipment-details")}</h2>
       <div className="relative border rounded-lg">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
