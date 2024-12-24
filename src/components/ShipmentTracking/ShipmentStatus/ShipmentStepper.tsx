@@ -5,6 +5,8 @@ import { FormatShipmentStatusHandler } from "../../../utils";
 const ShipmentStepper = () => {
   const { response } = useShipmentStatus();
   const isDelivered = response?.CurrentStatus?.state === "DELIVERED";
+    const isCancelled = response?.CurrentStatus?.state === "CANCELLED";
+
   const shippingDetails = response?.TransitEvents?.map((event, index) => {
     const isLastItem = index === response?.TransitEvents?.length - 1;
     return (
@@ -17,14 +19,22 @@ const ShipmentStepper = () => {
         <div className="min-w-5 min-h-5 flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
           <span
             className={`size-5 flex justify-center items-center shrink-0 ${
-              isDelivered ? "bg-green-500" : "bg-customRed"
+              isDelivered
+                ? "bg-green-500"
+                : isCancelled
+                ? "bg-customRed"
+                : "bg-yellow-300"
             } font-medium text-gray-800 rounded-full`}
           >
             {isDelivered ? <Delivered /> : <NotDelivered />}
           </span>
           <div
             className={`${
-              isDelivered ? "bg-green-500" : "bg-customRed"
+              isDelivered
+                ? "bg-green-500"
+                : isCancelled
+                ? "bg-customRed"
+                : "bg-yellow-300"
             } w-px h-full md:mt-0 md:w-full md:h-px md:flex-1 group-last:hidden`}
           ></div>
         </div>

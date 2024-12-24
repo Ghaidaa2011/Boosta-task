@@ -9,7 +9,7 @@ const useShipmentInfo = () => {
       case "CANCELLED":
         return "text-red-500";
       default:
-        return "text-gray-900";
+        return "text-yellow-300";
     }
   };
   return { stateClass, response }
