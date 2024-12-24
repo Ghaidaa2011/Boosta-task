@@ -1,5 +1,6 @@
 import useShipmentStatus from "./useShipmentStatus";
 import Delivered from "../../../assets/svg/delivered.svg?react";
+import NotDelivered from "../../../assets/svg/notDelivered.svg?react";
 import { FormatShipmentStatusHandler } from "../../../utils";
 const ShipmentStepper = () => {
   const { response } = useShipmentStatus();
@@ -19,7 +20,7 @@ const ShipmentStepper = () => {
               isDelivered ? "bg-green-500" : "bg-customRed"
             } font-medium text-gray-800 rounded-full`}
           >
-            <Delivered />
+            {isDelivered ? <Delivered /> : <NotDelivered />}
           </span>
           <div
             className={`${

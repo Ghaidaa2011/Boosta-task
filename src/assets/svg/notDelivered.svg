@@ -1,0 +1,15 @@
+<svg
+  className="w-2 h-2 text-white lg:w-3 lg:h-3 dark:text-blue-300"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 16 16"
+>
+  <path
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    d="M4 4L12 12M12 4L4 12"
+  />
+</svg>
