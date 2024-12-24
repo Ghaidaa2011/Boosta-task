@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import MainLayout from "./layouts/MainLayout.tsx";
 // redux
-import { store} from "../src/store/index";
+import { store } from "../src/store/index";
 import { Provider } from "react-redux";
 // axios
 import "./services/axios-global.js";
@@ -18,7 +18,7 @@ createRoot(document.getElementById("root")!).render(
   <I18nextProvider i18n={i18next}>
     <TranslateProvider>
       <Provider store={store}>
-          <MainLayout />
+        <MainLayout />
       </Provider>
     </TranslateProvider>
   </I18nextProvider>
