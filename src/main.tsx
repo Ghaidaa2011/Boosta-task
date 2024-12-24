@@ -13,7 +13,13 @@ import i18next from "./i18n.ts";
 import { TranslateProvider } from "./context/TranslateContext.tsx";
 //flowbite
 import "flowbite";
+import { initFlowbite } from "flowbite";
 
+
+// Initialize Flowbite when the app mounts
+document.addEventListener('DOMContentLoaded', () => {
+  initFlowbite();
+});
 createRoot(document.getElementById("root")!).render(
   <I18nextProvider i18n={i18next}>
     <TranslateProvider>
