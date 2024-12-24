@@ -9,7 +9,7 @@ const MainLayout = () => {
   const { response, error } = useAppSelector((state) => state.tracking);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-5">
       <Navbar />
       {error ? (
         <Error />
