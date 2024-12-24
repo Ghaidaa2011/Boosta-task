@@ -6,7 +6,7 @@ import { formatShortDate, formatShortTime } from "../../../utils/DateHandler";
 const ShipmentDetails = () => {
   const { t } = useTranslation("global");
 
-  const response = useAppSelector((state) => state.response);
+  const response = useAppSelector((state) => state.tracking.response);
 
   const shipmentDetails = response?.TransitEvents?.map((detail, index) => (
     <tr

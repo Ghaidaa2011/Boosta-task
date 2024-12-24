@@ -1,7 +1,7 @@
 import { useAppSelector } from "../../../store/hooks";
 
 const useShipmentInfo = () => {
-  const response = useAppSelector(state => state.response);
+  const response = useAppSelector(state => state.tracking.response);
   const stateClass = (state: string | undefined) => {
     switch (state) {
       case "DELIVERED":

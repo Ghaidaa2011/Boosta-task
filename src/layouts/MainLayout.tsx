@@ -6,7 +6,7 @@ import { useAppSelector } from "../store/hooks";
 import Error from "../pages/Error";
 
 const MainLayout = () => {
-  const { response, error } = useAppSelector((state) => state);
+  const { response, error } = useAppSelector((state) => state.tracking);
 
   return (
     <div className="container mx-auto">

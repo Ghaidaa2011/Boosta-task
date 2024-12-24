@@ -24,12 +24,8 @@ const TrackShipment: React.FC = () => {
         if (trackingNumber !== lastTrackingNumber) {
           dispatch(actGetTrackingOrder(Number(trackingNumber)));
           setLastTrackingNumber(trackingNumber); 
-        } else {
-          alert("You have already requested this tracking number.");
-        }
-      } else {
-        alert("Please enter a valid tracking number containing only digits.");
-      }
+        } 
+      } 
     }
   };
 

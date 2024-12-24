@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
 import MainLayout from "./layouts/MainLayout.tsx";
 // redux
-import { store, persistor } from "../src/store/index";
+import { store} from "../src/store/index";
 import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
+// import { PersistGate } from "redux-persist/integration/react";
 // axios
 import "./services/axios-global.js";
 //styles
@@ -19,9 +19,9 @@ createRoot(document.getElementById("root")!).render(
   <I18nextProvider i18n={i18next}>
     <TranslateProvider>
       <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
+        {/* <PersistGate loading={null} persistor={persistor}> */}
           <MainLayout />
-        </PersistGate>
+        {/* </PersistGate> */}
       </Provider>
     </TranslateProvider>
   </I18nextProvider>
