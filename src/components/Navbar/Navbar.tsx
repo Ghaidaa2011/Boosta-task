@@ -4,10 +4,15 @@ import LogoEn from "../common/logo/LogoEn";
 import ChangeLangButton from "./ChangeLangButton/ChangeLangButton";
 import TrackShipment from "./TrackShipment/TrackShipment";
 import { useTranslateContext } from "../../context/TranslateContext";
+import { initFlowbite } from "flowbite";
+import { useEffect } from "react";
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation("global");
-  const {EnLang}=useTranslateContext()
+  const {EnLang}=useTranslateContext();
+    useEffect(() => {
+    initFlowbite();
+  }, []);
   return (
     <>
       <nav className="mb-6 border-b bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
