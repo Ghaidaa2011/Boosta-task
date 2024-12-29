@@ -4,7 +4,7 @@
     "prices": "Pricing",
     "call-sales": "Call  Sales",
     "track-shipment": "Track Shipment ",
-    "sign-in": "Sing in",
+    "sign-in": "Sign in",
     "tracking-no": "Tracking No."
   },
   "shipmentInfo": {
@@ -21,11 +21,11 @@
   "shipmentDetails": {
     "shipment-details": "Shipment Details",
     "branch": "Branch",
-    "date":	"Date",
+    "date": "Date",
     "time": "Time",
     "details": "Details"
   },
-  "error":{
-    "invalid":"Invalid Tracking Number"
+  "error": {
+    "invalid": "Invalid Tracking Number"
   }
 }
